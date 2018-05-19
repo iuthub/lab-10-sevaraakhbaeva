@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Amazing Weightinator</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="container">
+	<fieldset>
+		<div class="form-group">Convert <input type="text" class="form-control"/></div>
+		<div class="form-group">
+			<select class="form-control">
+				<option>kg</option>
+				<option>lb</option>
+			</select>
+		</div>
+		to
+		<div class="form-group">
+			<select class="form-control">
+				<option>lb</option>
+				<option>kg</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-primary" onclick="convert();">Calculate</button>
+		</div>
+		<br/>
+		Answer: <span id="answer"></span>
+	</fieldset>
+	</div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="common.js"></script>
+</body>
+</html>
